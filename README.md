@@ -2,18 +2,15 @@
 
 > One-line summary: Analyzed **[X]+ records** to uncover **[key insight]**, helping a business **[measurable outcome, e.g., identify the 3 regions driving 60% of revenue]**.
 
-![Dashboard Preview](images/dashboard_preview.png)
-
-**[Live Demo / Dashboard PDF](link)** · **[Dataset Source](link)** · **[Author LinkedIn](link)**
+![Dashboard Preview](dashboards/Dashboard.png)
 
 ---
 
 ## 🎯 Problem Statement
-[2-3 lines. Write it like a business problem, not a tutorial.]
-Example: A retail company has sales data spread across multiple files and no clear view of regional performance, product profitability, or demand trends. This project builds an end-to-end pipeline that cleans the data, stores it in PostgreSQL, analyzes it, and presents KPIs in an interactive dashboard.
+A retail company has sales data spread across multiple files and no clear view of regional performance, product profitability, or demand trends. This project builds an end-to-end pipeline that cleans the data, stores it in PostgreSQL, analyzes it, and presents KPIs in an interactive dashboard.
 
 ## 🏆 Key Results
-- Processed **[200K+]** records across **[N]** tables
+- Processed **[500K+]** records across **[N]** tables
 - Identified **[insight 1, e.g., Top 10% of customers contribute 45% of revenue]**
 - Built forecasting model with **[MAPE / R² / accuracy value]**
 - Reduced manual reporting effort by **[X]%** through automated SQL views and refreshable dashboard
@@ -25,7 +22,6 @@ Example: A retail company has sales data spread across multiple files and no cle
 | Database | PostgreSQL |
 | BI / Visualization | Power BI (DAX, data modeling) |
 | Statistical Analysis | Hypothesis testing, regression, EDA |
-| Web (optional) | Flask / React for a simple front end |
 | Version Control | Git, GitHub |
 
 ## 🗂️ Architecture
@@ -36,13 +32,9 @@ Raw CSV/Excel → Python (cleaning, EDA) → PostgreSQL (star schema) → Power 
 
 ## 📁 Project Structure
 ```
-├── data/               # Raw and cleaned datasets (or download link)
-├── notebooks/          # EDA and modeling notebooks
-├── sql/                # Schema, views, and analysis queries
+├── Data/               # Raw and cleaned datasets (or download link)
+├── SQL Queries/        # Schema, views, and analysis queries
 ├── dashboard/          # .pbix file and PDF export
-├── app/                # Flask/React app (if any)
-├── images/             # Screenshots
-├── requirements.txt
 └── README.md
 ```
 
@@ -59,21 +51,6 @@ Raw CSV/Excel → Python (cleaning, EDA) → PostgreSQL (star schema) → Power 
 2. **[Insight 2]:** [what you found and what action it suggests]
 3. **[Insight 3]:** [what you found and what action it suggests]
 
-## 🧮 Sample SQL
-```sql
--- Top 5 regions by revenue with month-over-month growth
-WITH monthly AS (
-  SELECT region, DATE_TRUNC('month', order_date) AS month, SUM(sales) AS revenue
-  FROM fact_sales
-  GROUP BY region, month
-)
-SELECT region, month, revenue,
-       ROUND(100.0 * (revenue - LAG(revenue) OVER (PARTITION BY region ORDER BY month))
-       / NULLIF(LAG(revenue) OVER (PARTITION BY region ORDER BY month), 0), 2) AS mom_growth_pct
-FROM monthly
-ORDER BY revenue DESC
-LIMIT 5;
-```
 
 ## 📈 Model Performance
 | Model | Metric | Score |
