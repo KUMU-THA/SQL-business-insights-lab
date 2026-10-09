@@ -57,5 +57,5 @@ python load_data.py
 jupyter notebook notebooks/
 python app/app.py
 ```
-Open `dashboard/<file>.pbix` in Power BI Desktop to explore the dashboard.
+Open `dashboards/Sales_Analysis_Dashboard.pbix` in Power BI Desktop to explore the dashboard.
 
