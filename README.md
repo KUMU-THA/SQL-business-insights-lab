@@ -1,7 +1,5 @@
 # Sales Analytics Dashboard with Python, PostgreSQL & Power BI
 
-> One-line summary: Analyzed **[X]+ records** to uncover **[key insight]**, helping a business **[measurable outcome, e.g., identify the 3 regions driving 60% of revenue]**.
-
 ![Dashboard Preview](dashboards/Dashboard.png)
 
 ---
