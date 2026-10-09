@@ -1,4 +1,4 @@
-# 📊 [Project Title]: e.g., Sales Analytics Dashboard with Python, PostgreSQL & Power BI
+# Sales Analytics Dashboard with Python, PostgreSQL & Power BI
 
 > One-line summary: Analyzed **[X]+ records** to uncover **[key insight]**, helping a business **[measurable outcome, e.g., identify the 3 regions driving 60% of revenue]**.
 
@@ -46,17 +46,6 @@ Raw CSV/Excel → Python (cleaning, EDA) → PostgreSQL (star schema) → Power 
 5. **Modeling:** [e.g., Random Forest / ARIMA / Prophet] to predict [target]
 6. **Visualization:** Power BI dashboard with [N] KPIs, filters, and drill-downs
 
-## 💡 Business Insights
-1. **[Insight 1]:** [what you found and what action it suggests]
-2. **[Insight 2]:** [what you found and what action it suggests]
-3. **[Insight 3]:** [what you found and what action it suggests]
-
-
-## 📈 Model Performance
-| Model | Metric | Score |
-|---|---|---|
-| Baseline | [MAPE/RMSE] | [value] |
-| [Final model] | [MAPE/RMSE] | [value] |
 
 ## 🚀 How to Run
 ```bash
@@ -71,9 +60,4 @@ jupyter notebook notebooks/
 python app/app.py
 ```
 Open `dashboard/<file>.pbix` in Power BI Desktop to explore the dashboard.
-
-## 🔮 Future Improvements
-- [e.g., Automate refresh with scheduled ETL]
-- [e.g., Add customer churn prediction]
-- [e.g., Deploy the app on a cloud platform]
 
