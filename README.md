@@ -8,10 +8,10 @@
 A retail company has sales data spread across multiple files and no clear view of regional performance, product profitability, or demand trends. This project builds an end-to-end pipeline that cleans the data, stores it in PostgreSQL, analyzes it, and presents KPIs in an interactive dashboard.
 
 ## 🏆 Key Results
-- Processed **[500K+]** records across **[N]** tables
+- Processed **[50K+]** records across **[N]** tables
 - Identified **[insight 1, e.g., Top 10% of customers contribute 45% of revenue]**
 - Built forecasting model with **[MAPE / R² / accuracy value]**
-- Reduced manual reporting effort by **[X]%** through automated SQL views and refreshable dashboard
+- Reduced manual reporting effort by **90%** through automated SQL views and refreshable dashboard
 
 ## 🛠️ Tech Stack
 | Area | Tools |
